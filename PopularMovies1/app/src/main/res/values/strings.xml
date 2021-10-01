@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="error_message">Error retrieving movies</string>
+    <string name="description_image">Poster of a movie</string>
+    <string name="title">TITLE</string>
+    <string name="posterpath">POSTER_PATH</string>
+    <string name="synopsis">SYNOPSIS</string>
+    <string name="user_rating">USER_RATING</string>
+    <string name="release_date">RELEASE_DATE</string>
+    <string name="detail_error_message">Error retrieving detail of movie</string>
+    <string name="movie_detail">Movie Detail</string>
+    <string name="sort_by_popularity">Sort by popularity</string>
+    <string name="sort_by_rating">Sort by rating</string>
+</resources>

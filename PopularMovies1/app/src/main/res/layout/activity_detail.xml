@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_title"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/margin_detail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/movie_title"
+            android:background="@android:color/holo_blue_light"/>
+
+        <ImageView
+            android:id="@+id/image_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/description_image"
+            android:paddingStart="@dimen/padding_size"
+            android:paddingEnd="@dimen/padding_size"
+            android:layout_marginTop="@dimen/margin_detail"
+            android:layout_marginEnd="@dimen/margin_detail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/movie_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_size"
+            android:layout_marginStart="@dimen/margin_detail"
+            android:layout_marginTop="@dimen/margin_detail"
+            android:textSize="@dimen/release_date_txt_size"
+            app:layout_constraintTop_toBottomOf="@id/movie_title"
+            app:layout_constraintLeft_toRightOf="@id/image_box"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@android:color/holo_blue_light"
+            android:id="@+id/release_date"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_size"
+            android:layout_marginStart="@dimen/margin_detail"
+            android:layout_marginTop="@dimen/margin_detail"
+            android:textSize="@dimen/rating_text_size"
+            app:layout_constraintTop_toBottomOf="@+id/release_date"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image_box"
+            android:id="@+id/user_rating"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_size"
+            android:layout_marginTop="@dimen/margin_top_synopsis"
+            android:textSize="@dimen/synopsis_txt_size"
+            app:layout_constraintTop_toBottomOf="@+id/image_box"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/synopsis"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
